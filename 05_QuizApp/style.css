@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 420px;
+  padding: 25px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  background-color: #6200ea;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Quiz choices */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background-color: #2c2c2c;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+li:hover {
+  background-color: #3a3a3a;
+}
+
+/* Selected */
+li.selected {
+  border: 1px solid #6200ea;
+  background-color: #2a1b3d;
+}
+
+/* Correct */
+li.correct {
+  background-color: #1b5e20;
+  border: 1px solid #2e7d32;
+}
+
+/* Wrong */
+li.wrong {
+  background-color: #7f1d1d;
+  border: 1px solid #b91c1c;
+}
+
+.hidden {
+  display: none;
+}
