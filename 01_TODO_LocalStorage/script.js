@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load tasks from localStorage or start with empty array
   let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-  renderTasks();
+  renderTasks(); 
 
   // Add task on button click
   addButton.addEventListener('click', () => {
